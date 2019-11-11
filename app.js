@@ -3,7 +3,7 @@ const chalk = require("chalk");
 const products = require("./products.json");
 const app = express();
 
-app.listen(5000);
+app.listen(5000); // nodemon app.js kai pleon sto localhost:5000 vlepoume ta parakatw:
 app.get("/",(req, res) => {
     res.send("Welcome to our store");
 });
