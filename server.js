@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const products = require("./products.json");
 app.listen(3000); //orizoume se poia porta 8a akouei to app
 
 //Routing System
@@ -7,10 +8,24 @@ app.get("/",(req, res) => {
     res.sendFile(__dirname+"/views/home.html"); // h __dirname dinei to path
 });
 
-app.get("/about",(req, res) => {
-    res.send("<h1>About Page</h1>");
+app.get("/products",(req, res) => {
+    res.json(products);
 });
 
-app.get("/contact",(req, res) => {
-    res.send("<h1>Contact Form</h1>");
+app.get("/product/:product_id",(req, res) => {
+    const id = req.params.product_id;
+    let productfound = {message:"product not found"};
+    for(let p of products){
+        if(p._id == id) {
+            productfound = p;
+            return res.json(productfound);
+        }
+    }
+    res.json(productfound);
+});
+
+app.get("/product-v2/:product_id",(req, res) => {
+    const id = req.params.product_id;
+    const productfound = products.find(p =>p._id == id);
+        res.json(productfound);
 });

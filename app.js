@@ -11,6 +11,8 @@ app.get("/products",(req, res) => {
     res.json(products);
 });
 
+console.table(products);
+
 let sum = 0;
 let max = products[0].price;
 let min = products[0].price;
