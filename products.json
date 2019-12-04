@@ -2,12 +2,14 @@
   {
     "_id": 1,
     "name":"Core i7",
+    "photo": "https://b.scdn.gr/images/sku_main_images/019491/19491613/20190722155041_intel_core_i7_8700t_tray.jpeg",
     "price": 700,
     "category":"pc-parts"
   },
   {
     "_id": 2,
     "name":"Core i3",
+    "photo": "https://b.scdn.gr/images/sku_main_images/012975/12975173/large_20171005132133_intel_core_i3_8350k_box.jpeg",
     "price": 300,
     "category":"pc-parts",
     "sale": 250
@@ -15,6 +17,7 @@
   {
     "_id": 3,
     "name":"Core i5",
+    "photo": "https://a.scdn.gr/images/sku_main_images/016378/16378925/20181105160937_intel_core_i5_tray.jpeg",
     "price": 500,
     "category":"pc-parts",
     "sale": 450
@@ -22,6 +25,7 @@
   {
     "_id": 4,
     "name":"Core i9",
+    "photo": "https://c.scdn.gr/images/sku_main_images/016078/16078417/20181010124732_intel_core_i9_9900k_box.jpeg",
     "price": 900,
     "category":"pc-parts"
   }

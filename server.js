@@ -1,7 +1,10 @@
 const express = require("express");
+const cors = require("cors"); //vivlio8hkh gia na mas epitrepei ta cross origin requests
 const app = express();
 const products = require("./products.json");
 app.listen(3000); //orizoume se poia porta 8a akouei to app
+app.use(cors());
+
 
 //Routing System
 app.get("/",(req, res) => {
