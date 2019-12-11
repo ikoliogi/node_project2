@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors"); //vivlio8hkh gia na mas epitrepei ta cross origin requests
 const app = express();
 const products = require("./products.json");
+require('dotenv').config(); //dhmiourgei environment opws h angular/documentation https://www.npmjs.com/package/dotenv
+
 app.listen(3000); //orizoume se poia porta 8a akouei to app
 app.use(cors());
 
